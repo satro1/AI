@@ -17,7 +17,7 @@ plt.plot(x, y2, 'b')
 plt.show()
 '''
 # KNN
-'''
+
 data = dataGenerator.genKnnData(50, 4, noise=0.15)
 test_points = []
 for i in range(50):
@@ -55,10 +55,11 @@ plt.scatter(data[3, :, 0], data[3, :, 1], c='y')
 if len(c3) > 0:
     plt.scatter(c3[:, 0], c3[:, 1], c='y')
 plt.show()
-'''
+
 
 #ANN
 ## XOR
+'''
 data = dataGenerator.getXORData(50, noise=0.15)
 test_points = []
 for i in range(30):
@@ -69,6 +70,7 @@ plt.scatter(data[0, :, 0], data[0, :, 1], c='r')
 plt.scatter(data[1, :, 0], data[1, :, 1], c='b')
 plt.scatter(test_points[:, 0], test_points[:, 1], c='black')
 plt.show()
+'''
 '''
 data = dataGenerator.getAnnData(50, 4, noise=0.15)
 test_points = []
